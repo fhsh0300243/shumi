@@ -1,0 +1,39 @@
+
+#div1{
+    width: 150px;
+    height: 170px;
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-top: -80px;
+    margin-left: -90px;
+    background-image: url(Picture7.png);
+    background-size: cover
+}
+
+#div2{
+    position: absolute;
+    left: 285px;
+    top: 60%; 
+    margin-top: -15px;
+}
+
+#div3{
+    position: absolute;
+    left: 660px;
+    top: 60%;
+    margin-top: -15px;
+}
+
+body{
+    background-color: black;
+    background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/t31.0-8/13582136_1333711766643534_2743738490796536147_o.jpg);
+    background-size: cover;
+}
+
+p{
+    color: white;
+    font-family: Palace Script MT, Blackadder ITC;
+    font-weight: bold;
+    font-size: 30px;
+}

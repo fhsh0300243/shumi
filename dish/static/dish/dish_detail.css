@@ -1,0 +1,118 @@
+#area1{
+    top: 0px;
+    left: 0px;
+    height: 102px;
+    width: 90px;
+    background-image: url(Picture7.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#area2{ 
+    position: absolute;
+    height: 20px;
+    width: 170px;
+    top: 15px;
+    left: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#home{
+    position: absolute;
+    height: 20px;
+    width: 60px;
+    top: 60px;
+    right: 90px;
+}
+
+#dish{
+    position: absolute;
+    height: 20px;
+    width: 60px;
+    top: 60px;
+    right: 45px;
+}
+
+#life{
+    position: absolute;
+    height: 20px;
+    width: 60px;
+    top: 60px;
+    right: 0px;
+}
+
+#container{
+    position: absolute;
+    top: 25%;
+    left: 15px;
+    height:400px;
+    width:975px;
+    
+}
+
+.ep{
+    color: white;
+    font-family: Palace Script MT, Blackadder ITC;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#photo{
+    height:350px;
+    width:400px;
+    position: absolute;
+    top:0px;
+    left:40px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#title{
+    height:20px;
+    width:400px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top:0px;
+    right: 70px;
+    font-size: 18px;
+}
+
+#content{
+    height:310px;
+    width:400px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top:20px;
+    right: 70px;
+    word-break: break-all;
+}
+
+#date{
+    height:20px;
+    width:400px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    top:330px;
+    right: 70px;
+    font-size: 10px;
+    text-align: right;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-height: 350px;
+    max-width: 400px;
+}
+
+body{
+    background-color: black;
+    background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/t31.0-8/13582136_1333711766643534_2743738490796536147_o.jpg);
+    background-size: cover;
+}

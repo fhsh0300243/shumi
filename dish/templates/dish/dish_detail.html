@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC>
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'dish/dish_detail.css' %}">
+        <title>工程師的SOP食譜</title>
+    </head>
+    <body>
+        <div id="area1"></div>
+        <div id="area2">
+            工程師的SOP食譜
+        </div>
+        <div id="home">
+            <a href="/">
+                <p class="ep">Home</P>
+            </a>
+        </div>
+        <div id="dish">
+            <a href="/dish">
+                <p class="ep">Dish</p>
+            </a>
+        </div>
+        <div id="life">
+            <a href="/life">
+                <p class="ep">Life</p>
+            </a>
+        </div>
+        
+        <div id="container">
+            <div id="photo">
+                <img src="{{ dish_post.DishPhoto }}" alt="">
+            </div>
+            <div id="title">
+                {{ dish_post.DishTitle }}
+            </div>
+            <div id="content">
+                {{ dish_post.DishContent|linebreaksbr }}
+            </div>
+            <div id="date">
+                哥吃的是效率      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
+            </div>
+        </div>
+
+    </body>
+</html>
