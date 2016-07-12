@@ -26,23 +26,21 @@
             </a>
         </div>
         
-        <div id="container">
-            <div id="photo">
-                {% if life_post.LifePhoto %}
-                    <img src="{{ life_post.LifePhoto }}" alt="">
-                {% else %}
-                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13631518_1338606486154062_5614868408778686362_n.jpg?oh=293671b7b1cb71c9dc27d73943bffd75&oe=58357A7C" alt="">
-                {% endif %}
-            </div>
-            <div id="title">
-                {{ life_post.LifeTitle }}
-            </div>
-            <div id="content">
-                {{ life_post.LifeContent|linebreaksbr }}
-            </div>
-            <div id="date">
-                哥為code而活      {{ life_post.LifeCreated_date|date:'Y / m / d' }}
-            </div>
+        <div id="photo">
+            {% if life_post.LifePhoto %}
+                <img src="{{ life_post.LifePhoto }}" alt="">
+            {% else %}
+                <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13631518_1338606486154062_5614868408778686362_n.jpg?oh=293671b7b1cb71c9dc27d73943bffd75&oe=58357A7C" alt="">
+            {% endif %}
+        </div>
+        <div id="title">
+            {{ life_post.LifeTitle }}
+        </div>
+        <div id="content">
+            {{ life_post.LifeContent|linebreaksbr }}
+        </div>
+        <div id="date">
+            哥為code而活      {{ life_post.LifeCreated_date|date:'Y / m / d' }}
         </div>
 
     </body>
