@@ -29,16 +29,13 @@
         <div id="container">
             {% for dish_post in dish_list %}
                 <div id="post_hoder">
-                    <div id="title">
-                        <a href="{% url 'dish_detail' pk=dish_post.pk %}"><p>{{ dish_post.DishTitle }}</p></a>
-                    </div>
                     <div id="photo">
                         <a href="{% url 'dish_detail' pk=dish_post.pk %}">
                             <img src="{{ dish_post.DishPhoto }}" alt="">
                         </a>
                     </div>
                     <div id="date">
-                        {{ dish_post.DishCreated_date|date:"Y / m / d" }}
+                        <strong>{{ dish_post.DishCreated_date|date:"Y / m / d" }}</strong>
                     </div>
                 </div>
                 <div id="empty"></div>
