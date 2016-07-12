@@ -30,7 +30,7 @@
             {% for life_post in life_list %}
                 <div id="post_hoder">
                     <div id="title">
-                        <a href="{% url 'life_detail' pk=life_post.pk %}"><p>{{ life_post.LifeTitle }}</p></a>
+                        <a href="{% url 'life_detail' pk=life_post.pk %}" style="text-decoration:none;"><p>{{ life_post.LifeTitle }}</p></a>
                     </div>
                         {% if life_post.LifePhoto %}
                             <div id="photo">

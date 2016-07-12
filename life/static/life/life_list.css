@@ -1,65 +1,49 @@
 #area1{
     top: 0px;
     left: 0px;
-    height: 102px;
-    width: 90px;
+    height: 167px;
+    width: 150px;
     background-image: url(Picture7.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #area2{ 
-    position: absolute;
-    top: 15px;
-    left: 100px;
+    margin-left: 20px;
     color: white;
     font-weight: bold;
     font-size: 18px;
 }
 
 #home{
-    position: absolute;
-    top: 60px;
-    right: 120px;
+    margin-left:110px;
 }
 
 #dish{
-    position: absolute;
-    top: 60px;
-    right: 75px;
+    margin-left:110px;
 }
 
 #life{
-    position: absolute;
-    top: 60px;
-    right: 30px;
+    margin-left:110px;
 }
 
 #container{
     position: absolute;
-    top: 25%;
-    left: 15px;
-    height:400px;
-    width:975px;
+    top: 0px;
+    left: 170px;
+    height:530px;
+    width:830px;
 }
 
 #post_hoder{
     display: inline-block;
     position: relative;
-    height: 190px;
+    height: 170px;
     width: 150px;
-}
-
-#title{
-    height: 35px;
-    width: 150px;
-    background-color: black;
-    word-break: break-all;
-    text-align: center;
 }
 
 p{
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 13px;
     
@@ -68,25 +52,35 @@ p{
 #date{
     height: 20px;
     width: 150px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 10px;
     text-align: right;
-    background-color: black;
+    background-color: white;
+}
+
+#title{
+    height: 35px;
+    width: 150px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    word-break: break-all;
+    text-align: center;
 }
 
 #photo{
     height: 150px;
     width: 150px;
     text-align: center;
-    background-color: black; 
+    background-color: white; 
     display: table-cell;
     vertical-align: middle;
 }
 
 #empty{
     display: inline-block;
-    height: 205px;
+    height: 170px;
     width: 30px;
 }
 
@@ -98,8 +92,8 @@ p{
 }
 
 img{
-    max-width: 145px;
-    max-height: 145px;
+    max-width: 140px;
+    max-height: 140px;
     width: auto;
     height: auto;
     
@@ -110,3 +104,6 @@ body{
     background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/t31.0-8/13582136_1333711766643534_2743738490796536147_o.jpg);
     background-size: cover;
 }
+
+
+

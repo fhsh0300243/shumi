@@ -1,46 +1,37 @@
 #area1{
     top: 0px;
     left: 0px;
-    height: 102px;
-    width: 90px;
+    height: 167px;
+    width: 150px;
     background-image: url(Picture7.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #area2{ 
-    position: absolute;
-    top: 15px;
-    left: 100px;
     color: white;
     font-weight: bold;
     font-size: 18px;
 }
 
 #home{
-    position: absolute;
-    top: 60px;
-    right: 120px;
+    margin-left:110px;
 }
 
 #dish{
-    position: absolute;
-    top: 60px;
-    right: 75px;
+    margin-left:110px;
 }
 
 #life{
-    position: absolute;
-    top: 60px;
-    right: 30px;
+    margin-left:110px;
 }
 
 #container{
     position: absolute;
-    top: 25%;
-    left: 15px;
-    height:400px;
-    width:975px;
+    top: 0px;
+    left: 170px;
+    height:530px;
+    width:830px;
 }
 
 #post_hoder{
@@ -50,28 +41,21 @@
     width: 150px;
 }
 
-p{
-    color: white;
-    font-weight: bold;
-    font-size: 13px;
-    
-}
-
 #date{
     height: 20px;
     width: 150px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 10px;
     text-align: right;
-    background-color: black;
+    background-color: white;
 }
 
 #photo{
     height: 150px;
     width: 150px;
     text-align: center;
-    background-color: black; 
+    background-color: white; 
     display: table-cell;
     vertical-align: middle;
 }
@@ -90,8 +74,8 @@ p{
 }
 
 img{
-    max-width: 145px;
-    max-height: 145px;
+    max-width: 140px;
+    max-height: 140px;
     width: auto;
     height: auto;
     
