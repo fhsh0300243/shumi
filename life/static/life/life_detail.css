@@ -35,18 +35,25 @@
 
 #cont{
     position: absolute;
-    height:530px;
+    height:507px;
     width:450px;
-    top: 0px;
+    top: 23px;
     left: 553px;
 }
 
 #photo{
-    height:530px;
+    height:507px;
     width:450px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+}
+
+img{
+    width: auto;
+    height: auto;
+    max-height: 507px;
+    max-width: 450px;
 }
 
 #title{
@@ -55,19 +62,19 @@
     color: white;
     background-color: black;
     position: absolute;
-    top: 0px;
+    top: 23px;
     left: 170px;
     font-size: 25px;
     text-align: right;
 }
 
 #content{
-    height:475px;
+    height:452px;
     width:383px;
     color: white;
     background-color: black;
     position: absolute;
-    top:35px;
+    top:58px;
     left: 170px;
     word-break: break-all;
 }
@@ -82,13 +89,6 @@
     left: 170px;
     font-size: 10px;
     text-align: right;
-}
-
-img{
-    width: auto;
-    height: auto;
-    max-height: 530px;
-    max-width: 450px;
 }
 
 body{
