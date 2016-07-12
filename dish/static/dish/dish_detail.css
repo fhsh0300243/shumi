@@ -37,15 +37,6 @@
     right: 30px;
 }
 
-#container{
-    position: absolute;
-    top: 25%;
-    left: 15px;
-    height:400px;
-    width:975px;
-    
-}
-
 .ep{
     color: white;
     font-family: Palace Script MT, Blackadder ITC;
@@ -54,25 +45,30 @@
 }
 
 #photo{
-    height:350px;
-    width:400px;
+    height:400px;
+    width:450px;
     position: absolute;
-    top:0px;
-    left:40px;
+    top:50%;
+    left:50%;
+    margin-top: -150px;
+    margin-left: -470px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
 }
 
 #title{
-    height:20px;
+    height:35px;
     width:400px;
     color: white;
     background-color: black;
     position: absolute;
-    top:0px;
-    right: 70px;
-    font-size: 18px;
+    top:50%;
+    left:50%;
+    margin-top: -150px;
+    margin-right: 70px;
+    font-size: 25px;
+    text-align: right;
 }
 
 #content{
@@ -81,8 +77,10 @@
     color: white;
     background-color: black;
     position: absolute;
-    top:20px;
-    right: 70px;
+    top:50%;
+    left:50%;
+    margin-top: -115px;
+    margin-right: 70px;
     word-break: break-all;
 }
 
@@ -92,8 +90,10 @@
     color: white;
     background-color: black;
     position: absolute;
-    top:330px;
-    right: 70px;
+    top:50%;
+    left:50%;
+    margin-top: 195px;
+    margin-right: 70px;
     font-size: 10px;
     text-align: right;
 }
@@ -101,8 +101,8 @@
 img{
     width: auto;
     height: auto;
-    max-height: 350px;
-    max-width: 400px;
+    max-height: 400px;
+    max-width: 450px;
 }
 
 body{

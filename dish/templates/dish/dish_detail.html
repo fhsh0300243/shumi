@@ -26,19 +26,17 @@
             </a>
         </div>
         
-        <div id="container">
-            <div id="photo">
-                <img src="{{ dish_post.DishPhoto }}" alt="">
-            </div>
-            <div id="title">
-                {{ dish_post.DishTitle }}
-            </div>
-            <div id="content">
-                {{ dish_post.DishContent|linebreaksbr }}
-            </div>
-            <div id="date">
-                哥吃的是效率      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
-            </div>
+        <div id="photo">
+            <img src="{{ dish_post.DishPhoto }}" alt="">
+        </div>
+        <div id="title">
+            {{ dish_post.DishTitle }}
+        </div>
+        <div id="content">
+            {{ dish_post.DishContent|linebreaksbr }}
+        </div>
+        <div id="date">
+            哥吃的是效率      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
         </div>
 
     </body>
