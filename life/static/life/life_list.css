@@ -10,8 +10,6 @@
 
 #area2{ 
     position: absolute;
-    height: 20px;
-    width: 150px;
     top: 15px;
     left: 100px;
     color: white;
@@ -21,26 +19,20 @@
 
 #home{
     position: absolute;
-    height: 20px;
-    width: 60px;
     top: 60px;
-    right: 90px;
+    right: 120px;
 }
 
 #dish{
     position: absolute;
-    height: 20px;
-    width: 60px;
     top: 60px;
-    right: 45px;
+    right: 75px;
 }
 
 #life{
     position: absolute;
-    height: 20px;
-    width: 60px;
     top: 60px;
-    right: 0px;
+    right: 30px;
 }
 
 #container{
@@ -54,13 +46,13 @@
 #post_hoder{
     display: inline-block;
     position: relative;
-    height: 140px;
-    width: 100px;
+    height: 190px;
+    width: 150px;
 }
 
 #title{
     height: 35px;
-    width: 100px;
+    width: 150px;
     background-color: black;
     word-break: break-all;
     text-align: center;
@@ -75,7 +67,7 @@ p{
 
 #date{
     height: 20px;
-    width: 100px;
+    width: 150px;
     color: white;
     font-weight: bold;
     font-size: 10px;
@@ -84,8 +76,8 @@ p{
 }
 
 #photo{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     text-align: center;
     background-color: black; 
     display: table-cell;
@@ -94,7 +86,7 @@ p{
 
 #empty{
     display: inline-block;
-    height: 140px;
+    height: 205px;
     width: 30px;
 }
 
@@ -106,8 +98,8 @@ p{
 }
 
 img{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 145px;
+    max-height: 145px;
     width: auto;
     height: auto;
     

@@ -19,26 +19,20 @@
 
 #home{
     position: absolute;
-    height: 20px;
-    width: 60px;
     top: 60px;
-    right: 90px;
+    right: 120px;
 }
 
 #dish{
     position: absolute;
-    height: 20px;
-    width: 60px;
     top: 60px;
-    right: 45px;
+    right: 75px;
 }
 
 #life{
     position: absolute;
-    height: 20px;
-    width: 60px;
     top: 60px;
-    right: 0px;
+    right: 30px;
 }
 
 #container{
@@ -96,8 +90,8 @@ p{
 }
 
 img{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 145px;
+    max-height: 145px;
     width: auto;
     height: auto;
     
