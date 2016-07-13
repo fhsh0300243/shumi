@@ -1,29 +1,44 @@
 #area1{
+    position: absolute;
     top: 0px;
-    left: 0px;
-    height: 167px;
-    width: 150px;
+    margin-left: 50%;
+    left: -50px;
+    height: 105px;
+    width: 100px;
     background-image: url(Picture7.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #area2{ 
+    position: absolute;
     color: white;
     font-weight: bold;
     font-size: 18px;
+    margin-left: 50%;
+    left: 50px;
+    top: 85px;
 }
 
 #home{
-    margin-left:110px;
+    position: absolute;
+    margin-left:50%;
+    top: 68px;
+    left: -80px;
 }
 
 #dish{
-    margin-left:110px;
+    position: absolute;
+    margin-left:50%;
+    top: 68px;
+    left: -130px;
 }
 
 #life{
-    margin-left:110px;
+    position: absolute;
+    margin-left:50%;
+    top: 68px;
+    left: -180px;
 }
 
 .ep{
@@ -35,58 +50,61 @@
 
 #cont{
     position: absolute;
-    height:507px;
-    width:450px;
-    top: 23px;
-    left: 553px;
+    height:380px;
+    width:430px;
+    top: 150px;
+    margin-left: 50%;
+    left: -430px;
+    
 }
 
 #photo{
-    height:507px;
-    width:450px;
+    height:380px;
+    width:430px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    background-color: white;
 }
 
 img{
     width: auto;
     height: auto;
-    max-height: 507px;
-    max-width: 450px;
+    max-height: 360px;
+    max-width: 410px;
 }
 
 #title{
     height:35px;
-    width:383px;
+    width:430px;
     color: white;
     background-color: black;
     position: absolute;
-    top: 23px;
-    left: 170px;
+    top: 150px;
+    margin-left: 50%;
     font-size: 25px;
     text-align: right;
 }
 
 #content{
-    height:452px;
-    width:383px;
+    height:325px;
+    width:430px;
     color: white;
     background-color: black;
     position: absolute;
-    top:58px;
-    left: 170px;
+    top:185px;
+    margin-left: 50%;
     word-break: break-all;
 }
 
 #date{
     height:20px;
-    width:383px;
+    width:430px;
     color: white;
     background-color: black;
     position: absolute;
     top:510px;
-    left: 170px;
+    margin-left: 50%;
     font-size: 10px;
     text-align: right;
 }
