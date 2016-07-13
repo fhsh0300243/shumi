@@ -1,37 +1,53 @@
 #area1{
+    position: absolute;
     top: 0px;
-    left: 0px;
-    height: 167px;
-    width: 150px;
+    margin-left: 50%;
+    left: -50px;
+    height: 105px;
+    width: 100px;
     background-image: url(Picture7.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 #area2{ 
+    position: absolute;
     color: white;
     font-weight: bold;
     font-size: 18px;
+    margin-left: 50%;
+    left: 50px;
+    top: 85px;
 }
 
 #home{
-    margin-left:110px;
+    position: absolute;
+    margin-left:50%;
+    top: 68px;
+    left: -80px;
 }
 
 #dish{
-    margin-left:112px;
+    position: absolute;
+    margin-left:50%;
+    top: 68px;
+    left: -130px;
 }
 
 #life{
-    margin-left:114px;
+    position: absolute;
+    margin-left:50%;
+    top: 68px;
+    left: -180px;
 }
 
 #container{
     position: absolute;
-    top: 0px;
-    left: 170px;
-    height:530px;
-    width:830px;
+    top: 120px;
+    margin-left: 50%;
+    left: -430px;
+    height:430px;
+    width:870px;
 }
 
 #post_hoder{
