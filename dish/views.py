@@ -5,7 +5,7 @@ from .models import DishPost
 from django.utils import timezone
 
 def dish_home(request):
-    dish_list=DishPost.objects.filter(DishCreated_date__lte=timezone.now()).order_by('DishCreated_date')
+    dish_list=DishPost.objects.all().order_by('DishCreated_date')[::-1]
     return  render(request, 'dish/dish_list.html',{'dish_list': dish_list})
 
 def dish_detail(request, pk):

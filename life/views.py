@@ -5,7 +5,7 @@ from .models import LifePost
 from django.utils import timezone
 
 def life_home(request):
-    life_list=LifePost.objects.filter(LifeCreated_date__lte=timezone.now()).order_by('LifeCreated_date')
+    life_list=LifePost.objects.all().order_by('LifeCreated_date')[::-1]
     return  render(request, 'life/life_list.html',{'life_list': life_list})
 
 def life_detail(request, pk):
