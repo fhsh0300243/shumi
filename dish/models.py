@@ -10,6 +10,6 @@ class DishPost(models.Model, HitCountMixin):
     DishContent=models.TextField(blank=True)
     DishPhoto=models.URLField(blank=True)
     DishCreated_date=models.DateTimeField(auto_now_add=True)
-    DishHitcount=GenericRelation(HitCount, object_id_field='object_pk', related_query_name='DishHitcount_relation')
+
     def __str__(self):
         return self.DishTitle

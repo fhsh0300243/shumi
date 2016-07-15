@@ -21,5 +21,4 @@ urlpatterns = [
     url(r'', include('homepage.urls')),
     url(r'^dish/', include('dish.dish_urls')),
     url(r'^life/', include('life.life_urls')),
-    url(r'hitcount/', include('hitcount.urls', namespace='hitcount')),
 ]

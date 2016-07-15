@@ -125,3 +125,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT=os.path.join(BASE_DIR, 'static')
 FILE_CHARSET='big5'
+SESSION_SAVE_EVERY_REQUEST=True

@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404
 # Create your views here.
 from .models import DishPost
 from django.utils import timezone
+from hitcount.views import HitCountDetailView
 
 def dish_home(request):
     dish_list=DishPost.objects.all().order_by('DishCreated_date')[::-1]
@@ -12,3 +13,6 @@ def dish_detail(request, pk):
     dish_post=DishPost.objects.get(pk=pk)
     return render(request, 'dish/dish_detail.html', {'dish_post':dish_post})
 
+class DishPostCountHitDetailView(HitCountDetailView):
+    model=DishPost
+    count_hit = True

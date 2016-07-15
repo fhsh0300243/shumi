@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC>
 {% load staticfiles %}
 {% load hitcount_tags%}
-{% get_hit_count for dish_post as hc %}
+
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'dish/dish_detail.css' %}">
@@ -33,7 +33,7 @@
             {{ dish_post.DishContent|linebreaksbr }}
         </div>
         <div id="date">
-            {{hc}}    哥吃的是效率      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
+            {% get_hit_count for dish_post %}    哥吃的是效率      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
         </div>
 
     </body>
