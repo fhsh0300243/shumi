@@ -3,30 +3,33 @@
     width: 200px;
     height: 220px;
     position: absolute;
-    left: 50%;
-    top: 50%; 
-    margin-top: -100px;
-    margin-left: -150px;
+    top: 200px;
+    left: -180px;
+    margin-left: 50%;
+    
     background-image: url(Picture7.png);
     background-size: cover;
 }
 
 #dish{  
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: 2px;
-    margin-left: 60px;
-
+    height: 35px;
+    width: 65px;
+    top: 320px;
+    margin-left: 50%;
+    background-image: url(dish.png);
+    background-size: cover;
 }
 
 #life{
     position: absolute;
-    left: 50%;
-    top: 50%;
-    margin-top: 52px;
-    margin-left: 60px;
-
+    height: 35px;
+    width: 65px;
+    top: 370px;
+    left: -10px;
+    margin-left: 50%;
+    background-image: url(life.png);
+    background-size: cover;
 }
 
 body{
