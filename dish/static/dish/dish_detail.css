@@ -100,7 +100,7 @@ img{
     top:155px;
     margin-left: 50%;
     word-break: break-all;
-    overflow-y:scroll;
+    overflow:auto;
 }
 
 #date{
