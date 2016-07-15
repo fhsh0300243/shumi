@@ -33,7 +33,7 @@
             {{ dish_post.DishContent|linebreaksbr }}
         </div>
         <div id="date">
-            {% get_hit_count for dish_post %}    哥吃的是效率      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
+            有{% get_hit_count for dish_post %}個人聞過香      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
         </div>
 
     </body>

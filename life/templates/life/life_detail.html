@@ -1,5 +1,7 @@
 <!DOCTYPE html PUBLIC>
 {% load staticfiles %}
+{% load hitcount_tags%}
+
 <html>
     <head>
         <link rel="stylesheet" href="{% static 'life/life_detail.css' %}">
@@ -35,7 +37,7 @@
             {{ life_post.LifeContent|linebreaksbr }}
         </div>
         <div id="date">
-            哥為code而活      {{ life_post.LifeCreated_date|date:'Y / m / d' }}
+            有{% get_hit_count for life_post %}個人為coding而活      {{ life_post.LifeCreated_date|date:'Y / m / d' }}
         </div>
 
     </body>
