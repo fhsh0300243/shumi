@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'homepage',
     'dish',
     'life',
+    'hitcount'
 ]
 
 MIDDLEWARE_CLASSES = [

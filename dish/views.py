@@ -11,3 +11,4 @@ def dish_home(request):
 def dish_detail(request, pk):
     dish_post=DishPost.objects.get(pk=pk)
     return render(request, 'dish/dish_detail.html', {'dish_post':dish_post})
+
