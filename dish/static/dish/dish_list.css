@@ -23,22 +23,34 @@
 #home{
     position: absolute;
     margin-left:50%;
-    top: 68px;
     left: -80px;
+    height: 15px;
+    width: 30px;
+    top: 90px;
+    background-image: url(home.png);
+    background-size: cover;
 }
 
 #dish{
     position: absolute;
     margin-left:50%;
-    top: 68px;
     left: -130px;
+    height: 15px;
+    width: 30px;
+    top: 89px;
+    background-image: url(dish.png);
+    background-size: cover;
 }
 
 #life{
     position: absolute;
     margin-left:50%;
-    top: 68px;
     left: -180px;
+    height: 15px;
+    width: 30px;
+    top: 89px;
+    background-image: url(life.png);
+    background-size: cover;
 }
 
 #container{
@@ -80,13 +92,6 @@
     display: inline-block;
     height: 170px;
     width: 15px;
-}
-
-.ep{
-    color: white;
-    font-family: Palace Script MT, Blackadder ITC;
-    font-weight: bold;
-    font-size: 20px;
 }
 
 img{
