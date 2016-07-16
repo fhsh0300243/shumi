@@ -69,6 +69,16 @@
     width: 150px;
 }
 
+#title{
+    height: 35px;
+    width: 150px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    word-break: break-all;
+    text-align: center;
+}
+
 #date{
     height: 20px;
     width: 150px;
