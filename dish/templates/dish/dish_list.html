@@ -1,51 +1,35 @@
-<!DOCTYPE html PUBLIC>
+{% extends 'dish/dish_base.html' %}
 {% load staticfiles %}
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'dish/dish_list.css' %}">
-        <title>工程師的SOP食譜</title>
-    </head>
-    <body>
-        <div id="area1"></div>
-        <div id="area2">
-            工程師的SOP食譜
-        </div>        
-        <a href="/">
-            <div id="home"></div>
-        </a>
-        <a href="/dish">
-            <div id="dish"></div>
-        </a>
-        <a href="/life">
-            <div id="life"></div>
-        </a>
-        
-        <div id="container">
-            {% for dish_post in dish_list %}
-                <div id="post_hoder">
-                    <div id="title">
-                        <a href="{% url 'dish_detail' pk=dish_post.pk %}" style="text-decoration:none;"><p>{{ dish_post.DishTitle }}</p></a>
-                    </div>
-                    {% if dish_post.DishPhoto %}
-                        <div id="photo">
-                            <a href="{% url 'dish_detail' pk=dish_post.pk %}">
-                                <img src="{{ dish_post.DishPhoto }}" alt="">
-                            </a>
-                        </div>
-                    {% else %}
-                        <div id="photo">
-                            <a href="{% url 'dish_detail' pk=dish_post.pk %}">
-                                <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13631518_1338606486154062_5614868408778686362_n.jpg?oh=293671b7b1cb71c9dc27d73943bffd75&oe=58357A7C" alt="">
-                            </a>
-                        </div>
-                    {% endif %}
-                    <div id="date">
-                        <strong>{{ dish_post.DishCreated_date|date:"Y / m / d" }}</strong>
-                    </div>
-                </div>
-                <div id="empty"></div>
-            {% endfor %}
-        </div>
 
-    </body>
-</html>
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'dish/dish_list.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="container">
+        {% for dish_post in dish_list %}
+            <div id="post_hoder">
+                <div id="title">
+                    <a href="{% url 'dish_detail' pk=dish_post.pk %}" style="text-decoration:none;"><p>{{ dish_post.DishTitle }}</p></a>
+                </div>
+                {% if dish_post.DishPhoto %}
+                    <div id="photo">
+                        <a href="{% url 'dish_detail' pk=dish_post.pk %}">
+                            <img src="{{ dish_post.DishPhoto }}" alt="">
+                        </a>
+                    </div>
+                {% else %}
+                    <div id="photo">
+                        <a href="{% url 'dish_detail' pk=dish_post.pk %}">
+                            <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13631518_1338606486154062_5614868408778686362_n.jpg?oh=293671b7b1cb71c9dc27d73943bffd75&oe=58357A7C" alt="">
+                        </a>
+                    </div>
+                {% endif %}
+                <div id="date">
+                    <strong>{{ dish_post.DishCreated_date|date:"Y / m / d" }}</strong>
+                </div>
+            </div>
+            <div id="empty"></div>
+        {% endfor %}
+    </div>
+{% endblock %}

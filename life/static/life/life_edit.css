@@ -1,0 +1,12 @@
+#edit-area{
+    height: 400px;
+    width: 600px;
+    margin-left: 50%;
+    position: absolute;
+    top:120px;
+    left: -300px;
+    background-color: white;
+}
+h1{
+    color: white;
+}

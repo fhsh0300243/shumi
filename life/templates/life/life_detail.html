@@ -1,44 +1,33 @@
-<!DOCTYPE html PUBLIC>
-{% load staticfiles %}
+{% extends 'life/life_base.html' %}
 {% load hitcount_tags%}
+{% load staticfiles %}
 
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'life/life_detail.css' %}">
-        <title>工程師的日常</title>
-    </head>
-    <body>
-        <div id="area1"></div>
-        <div id="area2">
-            工程師的日常
-        </div>
-        <a href="/">
-            <div id="home"></div>
-        </a>
-        <a href="/dish">
-            <div id="dish"></div>
-        </a>
-        <a href="/life">
-            <div id="life"></div>
-        </a>
-        <div id="cont">
-            <div id="photo">
-                {% if life_post.LifePhoto %}
-                    <img src="{{ life_post.LifePhoto }}" alt="">
-                {% else %}
-                    <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13631518_1338606486154062_5614868408778686362_n.jpg?oh=293671b7b1cb71c9dc27d73943bffd75&oe=58357A7C" alt="">
-                {% endif %}
-            </div>
-        </div>
-        <div id="title">
-            {{ life_post.LifeTitle }}
-        </div>
-        <div id="content">
-            {{ life_post.LifeContent|linebreaksbr }}
-        </div>
-        <div id="date">
-            有{% get_hit_count for life_post %}個人為coding而活      {{ life_post.LifeCreated_date|date:'Y / m / d' }}
-        </div>
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'life/life_detail.css' %}">
+{% endblock %}
 
-    </body>
-</html>
+{% block content %}
+    <div id="cont">
+        <div id="photo">
+            {% if life_post.LifePhoto %}
+                <img src="{{ life_post.LifePhoto }}" alt="">
+            {% else %}
+                <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13631518_1338606486154062_5614868408778686362_n.jpg?oh=293671b7b1cb71c9dc27d73943bffd75&oe=58357A7C" alt="">
+            {% endif %}
+        </div>
+    </div>
+    <div id="title">
+        {{ life_post.LifeTitle }}
+    </div>
+    <div id="content">
+        {{ life_post.LifeContent|linebreaksbr }}
+    </div>
+    <div id="date">
+        有{% get_hit_count for life_post %}個人為coding而活      {{ life_post.LifeCreated_date|date:'Y / m / d' }}
+    </div>
+    {% if user.is_authenticated %}
+        <a href="{% url 'life_edit' pk=life_post.pk %}"
+            <div id="modify"></div>
+        </a>
+    {% endif %}
+{% endblock %}

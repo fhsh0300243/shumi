@@ -1,40 +1,31 @@
-<!DOCTYPE html PUBLIC>
+{% extends 'dish/dish_base.html' %}
 {% load staticfiles %}
 {% load hitcount_tags%}
 
-<html>
-    <head>
-        <link rel="stylesheet" href="{% static 'dish/dish_detail.css' %}">
-        <title>工程師的SOP食譜</title>
-    </head>
-    <body>
-        <div id="area1"></div>
-        <div id="area2">
-            工程師的SOP食譜
-        </div>
-        <a href="/">
-            <div id="home"></div>
-        </a>
-        <a href="/dish">
-            <div id="dish"></div>
-        </a>
-        <a href="/life">
-            <div id="life"></div>
-        </a>
-        <div id="cont">
-            <div id="photo">
-                <img src="{{ dish_post.DishPhoto }}" alt="">
-            </div>
-        </div>
-        <div id="title">
-            {{ dish_post.DishTitle }}
-        </div>
-        <div id="content">
-            {{ dish_post.DishContent|linebreaksbr }}
-        </div>
-        <div id="date">
-            有{% get_hit_count for dish_post %}個人聞過香      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
-        </div>
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'dish/dish_detail.css' %}">
+{% endblock %}
 
-    </body>
-</html>
+{% block content %}
+
+    <div id="cont">
+        <div id="photo">
+            <img src="{{ dish_post.DishPhoto }}" alt="">
+        </div>
+    </div>
+    <div id="title">
+        {{ dish_post.DishTitle }}
+    </div>
+    <div id="content">
+        {{ dish_post.DishContent|linebreaksbr }}
+    </div>
+    <div id="date">
+        有{% get_hit_count for dish_post %}個人聞過香      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
+    </div>
+    {% if user.is_authenticated %}
+        <a href="{% url 'dish_edit' pk=dish_post.pk %}"
+            <div id="modify"></div>
+        </a>
+    {% endif %}
+
+{% endblock %}

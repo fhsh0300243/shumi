@@ -1,0 +1,18 @@
+{% extends 'life/life_base.html' %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'life/life_edit.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <h1>New/Modify post</h1>
+    <form method="POST">{% csrf_token %}
+        <div id="edit-area">
+            {{ life_form.as_p }}
+        </div>
+        <button type="submit">Save</button>
+    </form>
+
+{% endblock %}
