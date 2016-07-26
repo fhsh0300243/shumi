@@ -71,3 +71,118 @@ img{
     background-size: cover;
 }
 
+#add_comment{
+    position: absolute;
+    width: 100px;
+    height:22px;
+    background-image: url(add_comment.png);
+    background-size: cover;
+    margin-left: 50%;
+    left: -434px;
+    top: 0px;
+    background-color: white; 
+}
+
+#comment_container{
+    position: absolute;
+    width: 868px;
+    height: auto;
+    top: 508px;
+    margin-left: 50%;
+    left: -430px;
+    background-color: white;    
+}
+
+#comment{
+    margin-left:85px;
+    margin-top:30px;
+    position: relative;
+    width: 700px;
+    height: auto;
+    
+}
+
+#comment_date{
+    width: 700px;
+    height: 20px;   
+    color: white;
+    background-color: black;
+    text-align: right;
+    font-size:10px;
+}
+
+#comment_content{
+    width: 700px;
+    height: auto;
+    color: white;
+    background-color: black;
+    word-break: break-all;
+}
+
+#comment_author{
+    width: 700px;
+    height: 20px;   
+    color: white;
+    background-color: black;
+    text-align: right;
+}
+
+#comment_remove{
+    width: 100px;
+    height: 20px;   
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+#comment_approve{
+    width: 100px;
+    height: 20px;   
+    color: white;
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+#comment_reply_button{
+    width: 100px;
+    height: 20px;   
+    color: white;
+    display: inline-block;
+    text-align: center;
+    background-color:black;
+}
+
+#comment_reply{
+    margin-left:50px;
+    margin-top: 5px;
+    width: 600px;
+    height: auto;
+    
+}
+
+#comment_reply_date{
+    width: 600px;
+    height: 20px;   
+    color: white;
+    background-color: black;
+    text-align: right;
+    font-size:10px;
+}
+
+#comment_reply_content{
+    width: 600px;
+    height: auto;
+    color: white;
+    background-color: black;
+    word-break: break-all;
+}
+
+#comment_reply_author{
+    width: 600px;
+    height: 20px;   
+    color: white;
+    background-color: black;
+    text-align: right;
+}

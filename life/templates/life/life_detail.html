@@ -9,25 +9,81 @@
 {% block content %}
     <div id="cont">
         <div id="photo">
-            {% if life_post.LifePhoto %}
-                <img src="{{ life_post.LifePhoto }}" alt="">
+            {% if life_post_from_db.Life_photo %}
+                <img src="{{ life_post_from_db.Life_photo }}" alt="">
             {% else %}
                 <img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13631518_1338606486154062_5614868408778686362_n.jpg?oh=293671b7b1cb71c9dc27d73943bffd75&oe=58357A7C" alt="">
             {% endif %}
         </div>
     </div>
     <div id="title">
-        {{ life_post.LifeTitle }}
+        {{ life_post_from_db.Life_title }}
     </div>
     <div id="content">
-        {{ life_post.LifeContent|linebreaksbr }}
+        {{ life_post_from_db.Life_content|linebreaksbr }}
     </div>
     <div id="date">
-        有{% get_hit_count for life_post %}個人為coding而活      {{ life_post.LifeCreated_date|date:'Y / m / d' }}
+        有{% get_hit_count for life_post_from_db %}個人為coding而活      {{ life_post_from_db.Life_created_date|date:'Y / m / d' }}
     </div>
     {% if user.is_authenticated %}
-        <a href="{% url 'life_edit' pk=life_post.pk %}"
+        <a href="{% url 'life_edit' pk=life_post_from_db.pk %}"
             <div id="modify"></div>
         </a>
     {% endif %}
+    
+    <div id="comment_container">
+        <a href="{% url 'life_add_comment_to_post' pk=life_post_from_db.pk %}">
+            <div id="add_comment"></div>
+        </a>
+        {% for life_comment in life_post_from_db.comments.all %}          
+            <div id="comment">
+                {% if life_comment.Life_comment_approved or user.is_authenticated %}
+                    <div id="comment_date">
+                        {{ life_comment.Life_comment_created_date }}
+                    </div>
+                    <div id="comment_content">
+                        {{ life_comment|linebreaksbr }}
+                    </div>
+                    <div id="comment_author">
+                        <strong>{{ life_comment.Your_name }}</strong>
+                    </div>
+                    {% if not life_comment.Life_comment_approved %}
+                        <div id="comment_remove">
+                            <a href="{% url 'life_comment_remove' pk=life_comment.pk %}">
+                                Remove
+                            </a>
+                        </div>
+                        <div id="comment_approve">
+                            <a href="{% url 'life_comment_approve' pk=life_comment.pk %}">
+                                Approve
+                            </a>
+                        </div>
+                    {% endif %}
+                    {% if user.is_authenticated and life_comment.Life_comment_approved %}
+                        <div id="comment_reply_button">
+                            <a href="{% url 'life_add_reply_to_comment' pk1=life_post_from_db.pk pk2=life_comment.pk %}">
+                                Reply
+                            </a>
+                        </div>
+                    {% endif %}
+                    {% for life_comment_reply in life_comment.replies.all %}
+                        <div id="comment_reply">
+                            <div id="comment_reply_date">
+                                {{ life_comment_reply.Life_comment_reply_created_date }}
+                            </div>
+                            <div id="comment_reply_content">
+                                {{ life_comment_reply|linebreaksbr }}
+                            </div>
+                            <div id="comment_reply_author">
+                                <strong>{{ life_comment_reply.Your_name }}</strong>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+
+        {% endfor %}
+    </div>
+
 {% endblock %}

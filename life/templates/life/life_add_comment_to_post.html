@@ -7,12 +7,12 @@
 
 {% block content %}
 
-    <h1>New/Modify post</h1>
+    <h1>New comment</h1>
     <form method="POST">{% csrf_token %}
         <div id="edit-area">
-            {{ life_post_form.as_p }}
+            {{ life_comment_form.as_p }}
         </div>
-        <button type="submit">Save</button>
+        <button type="submit">Send</button>
     </form>
 
 {% endblock %}

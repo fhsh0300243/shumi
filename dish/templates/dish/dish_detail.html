@@ -10,22 +10,77 @@
 
     <div id="cont">
         <div id="photo">
-            <img src="{{ dish_post.DishPhoto }}" alt="">
+            <img src="{{ dish_post_from_db.Dish_photo }}" alt="">
         </div>
     </div>
     <div id="title">
-        {{ dish_post.DishTitle }}
+        {{ dish_post_from_db.Dish_title }}
     </div>
     <div id="content">
-        {{ dish_post.DishContent|linebreaksbr }}
+        {{ dish_post_from_db.Dish_content|linebreaksbr }}
     </div>
     <div id="date">
-        有{% get_hit_count for dish_post %}個人聞過香      {{ dish_post.DishCreated_date|date:'Y / m / d' }}
+        有{% get_hit_count for dish_post_from_db %}個人聞過香      {{ dish_post_from_db.Dish_post_created_date|date:'Y / m / d' }}
     </div>
     {% if user.is_authenticated %}
-        <a href="{% url 'dish_edit' pk=dish_post.pk %}"
+        <a href="{% url 'dish_edit' pk=dish_post_from_db.pk %}"
             <div id="modify"></div>
         </a>
     {% endif %}
+    
+    <div id="comment_container">
+        <a href="{% url 'dish_add_comment_to_post' pk=dish_post_from_db.pk %}">
+            <div id="add_comment"></div>
+        </a>
+        {% for dish_comment in dish_post_from_db.comments.all %}          
+            <div id="comment">
+                {% if dish_comment.Dish_comment_approved or user.is_authenticated %}
+                    <div id="comment_date">
+                        {{ dish_comment.Dish_comment_created_date }}
+                    </div>
+                    <div id="comment_content">
+                        {{ dish_comment|linebreaksbr }}
+                    </div>
+                    <div id="comment_author">
+                        <strong>{{ dish_comment.Your_name }}</strong>
+                    </div>
+                    {% if not dish_comment.Dish_comment_approved %}
+                        <div id="comment_remove">
+                            <a href="{% url 'dish_comment_remove' pk=dish_comment.pk %}">
+                                Remove
+                            </a>
+                        </div>
+                        <div id="comment_approve">
+                            <a href="{% url 'dish_comment_approve' pk=dish_comment.pk %}">
+                                Approve
+                            </a>
+                        </div>
+                    {% endif %}
+                    {% if user.is_authenticated and dish_comment.Dish_comment_approved %}
+                        <div id="comment_reply_button">
+                            <a href="{% url 'dish_add_reply_to_comment' pk1=dish_post_from_db.pk pk2=dish_comment.pk %}">
+                                Reply
+                            </a>
+                        </div>
+                    {% endif %}
+                    {% for dish_comment_reply in dish_comment.replies.all %}
+                        <div id="comment_reply">
+                            <div id="comment_reply_date">
+                                {{ dish_comment_reply.Dish_comment_reply_created_date }}
+                            </div>
+                            <div id="comment_reply_content">
+                                {{ dish_comment_reply|linebreaksbr }}
+                            </div>
+                            <div id="comment_reply_author">
+                                <strong>{{ dish_comment_reply.Your_name }}</strong>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+
+
+        {% endfor %}
+    </div>
 
 {% endblock %}

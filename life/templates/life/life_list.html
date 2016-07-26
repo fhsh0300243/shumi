@@ -7,15 +7,15 @@
 
 {% block content %}
     <div id="container">
-        {% for life_post in life_list %}
+        {% for life_post in life_post_list %}
             <div id="post_hoder">
                 <div id="title">
-                    <a href="{% url 'life_detail' pk=life_post.pk %}" style="text-decoration:none;"><p>{{ life_post.LifeTitle }}</p></a>
+                    <a href="{% url 'life_detail' pk=life_post.pk %}" style="text-decoration:none;"><p>{{ life_post.Life_title }}</p></a>
                 </div>
-                    {% if life_post.LifePhoto %}
+                    {% if life_post.Life_photo %}
                         <div id="photo">
                             <a href="{% url 'life_detail' pk=life_post.pk %}">
-                                <img src="{{ life_post.LifePhoto }}" alt="">
+                                <img src="{{ life_post.Life_photo }}" alt="">
                             </a>
                         </div>
                     {% else %}
@@ -26,7 +26,7 @@
                         </div>
                     {% endif %}
                 <div id="date">
-                    <strong>{{ life_post.LifeCreated_date|date:"Y / m / d" }}</strong>
+                    <strong>{{ life_post.Life_post_created_date|date:"Y / m / d" }}-({{ life_post.comments.count }})-</strong>
                 </div>
             </div>
             <div id="empty"></div>
