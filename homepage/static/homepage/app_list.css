@@ -1,10 +1,10 @@
 
-#div1{
+#head{
     width: 200px;
     height: 220px;
     position: absolute;
     top: 200px;
-    left: -180px;
+    left: -120px;
     margin-left: 50%;
     background-image: url(Picture7.png);
     background-size: cover;
@@ -15,9 +15,12 @@
     height: 35px;
     width: 65px;
     top: 330px;
+    left:70px;
     margin-left: 50%;
     background-image: url(dish.png);
     background-size: cover;
+    background-color:#2f4f4f;
+    border-radius:5px;
 }
 
 #life{
@@ -25,10 +28,25 @@
     height: 35px;
     width: 65px;
     top: 378px;
-    left: -10px;
+    left: 50px;
     margin-left: 50%;
     background-image: url(life.png);
     background-size: cover;
+    background-color:#2f4f4f;
+    border-radius:5px;
+}
+
+#search{
+    position: absolute;
+    height: 35px;
+    width: 95px;
+    top: 378px;
+    left: -180px;
+    margin-left: 50%;
+    background-image: url(search.png);
+    background-size: cover;
+    background-color:#2f4f4f;
+    border-radius:5px;
 }
 
 body{
