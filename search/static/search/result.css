@@ -1,0 +1,115 @@
+
+h1{
+    color: white;
+}
+
+form{
+    position: absolute;
+    color: white;
+    margin-left: 50%;
+    top: 120px;
+    left: -135px;
+}
+
+#search_in_life{
+    background-color: white;
+    position: absolute;
+    margin-left: 50%;
+    top:140px;
+    left: 167px;
+    border-radius:5px;
+}
+
+#search_in_dish{
+    background-color: white;
+    position: absolute;
+    margin-left: 50%;
+    top:140px;
+    left: -275px;
+    border-radius:5px;
+}
+
+#dish_not_found{
+    background-color:white;
+    border-radius:5px;
+}
+
+#life_not_found{
+    background-color:white;
+    border-radius:5px;
+}
+
+#life_container{
+    position: absolute;
+    top: 160px;
+    margin-left: 50%;
+    min-height:10px;
+    width:430px;
+    text-align: center;    
+}
+
+#dish_container{
+    position: absolute;
+    top: 160px;
+    margin-left: 50%;
+    left: -430px;
+    min-height: 10px;
+    width:430px;
+    text-align: center; 
+}
+
+#post_hoder{
+    display: inline-block;
+    position: relative;
+    height: 170px;
+    width: 150px;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;   
+}
+
+#title{
+    height: 35px;
+    width: 150px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    word-break: break-all;
+    text-align: center;
+}
+
+#date{
+    height: 20px;
+    width: 150px;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+    background-color: white;
+}
+
+#photo{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background-color: white; 
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#empty{
+    display: inline-block;
+    height: 170px;
+    width: 15px;
+}
+
+img{
+    max-width: 140px;
+    max-height: 140px;
+    width: auto;
+    height: auto;
+    
+}
