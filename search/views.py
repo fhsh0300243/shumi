@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.db.models import Q
 from dish.models import Dish_post
 from life.models import Life_post
-from functools import reduce
-import operator
 
 # Create your views here.
 def search(request):
