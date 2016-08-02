@@ -15,7 +15,7 @@ form{
     background-color: white;
     position: absolute;
     margin-left: 50%;
-    top:140px;
+    top:150px;
     left: 167px;
     border-radius:5px;
 }
@@ -24,7 +24,7 @@ form{
     background-color: white;
     position: absolute;
     margin-left: 50%;
-    top:140px;
+    top:150px;
     left: -275px;
     border-radius:5px;
 }
@@ -33,7 +33,7 @@ form{
     background-color: white;
     position: absolute;
     margin-left: 50%;
-    top:140px;
+    top:150px;
     left:-60px;
     border-radius:5px;
 }
@@ -54,7 +54,7 @@ form{
 
 #life_container{
     position: absolute;
-    top: 160px;
+    top: 170px;
     margin-left: 50%;
     min-height:10px;
     width:430px;
@@ -63,7 +63,7 @@ form{
 
 #dish_container{
     position: absolute;
-    top: 160px;
+    top: 170px;
     margin-left: 50%;
     left: -430px;
     min-height: 10px;
