@@ -15,7 +15,7 @@
     </form>
     
     <div id="search_in_life">Search in life</div>
-    <div id="life_container">       
+    <div id="life_container">              
         {% for life_post in result_for_life %}
             <div id="post_hoder">
                 <div id="title">
@@ -39,11 +39,13 @@
                 </div>
             </div>
             <div id="empty"></div>
+        {% empty %}
+            <div id="life_empty">{{ result_empty_for_life.0 }}</div>
         {% endfor %}           
     </div>
     
     <div id="search_in_dish">Search in dish</div>
-    <div id="dish_container">
+    <div id="dish_container">       
         {% for dish_post in result_for_dish %}
             <div id="post_hoder">
                 <div id="title">
@@ -67,7 +69,11 @@
                 </div>
             </div>
             <div id="empty"></div>
+        {% empty %}
+            <div id="dish_empty">{{ result_empty_for_dish.0 }}</div>
         {% endfor %}
     </div>
+    <div id="error">{{ errors.0 }}</div>
+  
 
 {% endblock %}

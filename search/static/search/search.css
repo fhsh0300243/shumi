@@ -29,14 +29,27 @@ form{
     border-radius:5px;
 }
 
-#dish_not_found{
-    background-color:white;
+#error{
+    background-color: white;
+    position: absolute;
+    margin-left: 50%;
+    top:140px;
+    left:-60px;
     border-radius:5px;
 }
 
-#life_not_found{
+#dish_empty{
     background-color:white;
     border-radius:5px;
+    width: 100px;
+    margin-left: 36.3%;
+}
+
+#life_empty{
+    background-color:white;
+    border-radius:5px;
+    width: 100px;
+    margin-left: 36.3%;
 }
 
 #life_container{
@@ -45,7 +58,7 @@ form{
     margin-left: 50%;
     min-height:10px;
     width:430px;
-    text-align: center;    
+    text-align: center;
 }
 
 #dish_container{
@@ -55,7 +68,7 @@ form{
     left: -430px;
     min-height: 10px;
     width:430px;
-    text-align: center; 
+    text-align: center;
 }
 
 #post_hoder{
