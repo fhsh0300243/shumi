@@ -17,7 +17,7 @@
         </div>
     </div>
     <div id="title">{{ life_post_from_db.Life_title }}</div>
-    <div id="content"><pre><code>{{ life_post_from_db.Life_content|linebreaksbr }}</code></pre></div>
+    <div id="content"><pre><code><strong>{{ life_post_from_db.Life_content|linebreaksbr }}</strong></code></pre></div>
     <div id="date">有{% get_hit_count for life_post_from_db %}個人為coding而活      {{ life_post_from_db.Life_created_date|date:'Y / m / d' }}</div>
     {% if user.is_authenticated %}
         <a href="{% url 'life_edit' pk=life_post_from_db.pk %}"
