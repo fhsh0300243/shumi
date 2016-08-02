@@ -11,8 +11,8 @@ def search(request):
     errors = []
     query=request.GET.get('q')
     if query:
-        result_for_dish = Dish_post.objects.filter(Q(Dish_title__icontains=query))
-        result_for_life = Life_post.objects.filter(Q(Life_title__icontains=query))
+        result_for_dish = Dish_post.objects.filter(Q(Dish_title__icontains=query)).order_by('Dish_post_created_date')[::-1]
+        result_for_life = Life_post.objects.filter(Q(Life_title__icontains=query)).order_by('Life_post_created_date')[::-1]
         if not result_for_dish:
             result_empty_for_dish.append('Not found')
         if not result_for_life:
