@@ -42,6 +42,8 @@
     background-image: url(search.png);
     background-size: cover;
     z-index:3;
+    background-color:black;
+    border-radius:3px;
 }
 
 #home{
@@ -54,6 +56,8 @@
     background-image: url(home.png);
     background-size: cover;
     z-index:3;
+    background-color:black;
+    border-radius:3px;
 }
 
 #dish{
@@ -66,6 +70,8 @@
     background-image: url(dish.png);
     background-size: cover;
     z-index:3;
+    background-color:black;
+    border-radius:3px;
 }
 
 #life{
@@ -78,6 +84,8 @@
     background-image: url(life.png);
     background-size: cover;
     z-index:3;
+    background-color:black;
+    border-radius:3px;
 }
 
 #modify{
