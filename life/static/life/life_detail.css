@@ -1,16 +1,16 @@
-#cont{
+#photo_container{
     position: absolute;
-    height:380px;
-    width:430px;
-    top: 120px;
+    height:250px;
+    width:428px;
+    top: 0px;
     margin-left: 50%;
-    left: -430px;
+    left: 10px;
     
 }
 
 #photo{
-    height:380px;
-    width:430px;
+    height:250px;
+    width:428px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
@@ -20,59 +20,68 @@
 img{
     width: auto;
     height: auto;
-    max-height: 360px;
-    max-width: 410px;
+    max-height: 250px;
+    max-width: 428px;
 }
 
 #title{
-    height:35px;
-    width:430px;
-    color: white;
-    background-color: black;
+    height:70px;
+    width:440px;
+    color: black;
+    background-color: white;
     position: absolute;
-    top: 120px;
+    top: 180px;
     margin-left: 50%;
-    font-size: 25px;
-    text-align: left;
+    font-size: 35px;
+    text-align: center;
+    left: -430px;
+}
+
+#content_comment{
+    position: absolute;
+    top:270px;
+    margin-left: 50%;
+    left: -430px;
+    width:868px;
+    height:auto;
 }
 
 #content{
-    height:325px;
-    width:430px;
+    position: relative;
+    min-height:300px;
+    width:868px;
     color: white;
     background-color: black;
-    position: absolute;
-    top:155px;
-    margin-left: 50%;
+    top:0px;
     word-break: break-all;
     overflow:auto; 
 }
 
 #date{
     height:20px;
-    width:430px;
+    width:868px;
     color: white;
     background-color: black;
     position: absolute;
-    top:480px;
+    top:250px;
     margin-left: 50%;
     font-size: 10px;
     text-align: right;
+    left: -430px;
 }
 
 #modify{
     position: absolute;
-    margin-left:50%;
-    left: -345px;
+    margin-left: 350px;
+    top: 0px;
     height: 50px;
     width: 50px;
-    top: 54px;
     background-image: url(modify.png);
     background-size: cover;
 }
 
 #add_comment{
-    position: absolute;
+    position: relative;
     width: 100px;
     height:22px;
     background-image: url(add_comment.png);
@@ -84,22 +93,17 @@ img{
 }
 
 #comment_container{
-    position: absolute;
+    position: relative;
     width: 868px;
     height: auto;
-    top: 508px;
-    margin-left: 50%;
-    left: -430px;
     background-color: white;    
 }
 
 #comment{
     margin-left:85px;
-    margin-top:30px;
-    position: relative;
+    margin-top: 30px;
     width: 700px;
-    height: auto;
-    
+    height: auto;   
 }
 
 #comment_date{

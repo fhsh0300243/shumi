@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC>
+{% load staticfiles %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'life/life_base_for_detail.css' %}">
+        {% block extra_head %}
+        {% endblock %}
+        <title>工程師的日常</title>
+    </head>
+    <body>
+        <div id="head"></div>
+        <div id="page_title">
+            工程師的日常
+        </div>
+        <a href="/search">
+            <div id="search"></div>
+        </a>
+        <a href="/">
+            <div id="home"></div>
+        </a>
+        <a href="/dish">
+            <div id="dish"></div>
+        </a>
+        <a href="/life">
+            <div id="life"></div>
+        </a>
+        {% if user.is_authenticated %}
+            <a href="{% url 'life_new' %}"
+                <div id="modify"></div>
+            </a>
+        {% endif %}
+        
+        {% block content %}
+        {% endblock %}
+        
+    </body>
+</html>
