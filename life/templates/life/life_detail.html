@@ -24,7 +24,7 @@
         </div>
     </div>
     <div id="title"><strong>{{ life_post_from_db.Life_title }}</strong></div>
-    <div id="date">有{% get_hit_count for life_post_from_db %}個人為coding而活      {{ life_post_from_db.Life_post_created_date|date:'Y / m / d' }}</div>
+    <div id="date">有{% get_hit_count for life_post_from_db %}個人為coding而生      {{ life_post_from_db.Life_post_created_date|date:'Y / m / d' }}</div>
     <div id="content_comment">
         <div id="content"><pre>{{ life_post_from_db.Life_content|linebreaksbr }}</pre></div>
         <div id="comment_container">
