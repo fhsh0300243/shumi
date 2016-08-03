@@ -13,7 +13,7 @@
             <img src="{{ dish_post_from_db.Dish_photo }}" alt="">
         </div>
     </div>
-    <div id="title">{{ dish_post_from_db.Dish_title }}</div>
+    <div id="title"><strong>{{ dish_post_from_db.Dish_title }}</strong></div>
     <div id="content"><pre>{{ dish_post_from_db.Dish_content|linebreaksbr }}</pre></div>
     <div id="date">有{% get_hit_count for dish_post_from_db %}個人聞過香      {{ dish_post_from_db.Dish_post_created_date|date:'Y / m / d' }}</div>
     {% if user.is_authenticated %}

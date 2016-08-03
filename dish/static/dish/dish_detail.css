@@ -5,16 +5,19 @@
     top: 0px;
     margin-left: 50%;
     left: 10px;
-    
+    background-color: white;
 }
 
 #photo{
-    height:570px;
-    width:428px;
+    position: relative;
+    top:2.5px;
+    left:2.5px;
+    height:565px;
+    width:423px;
     text-align: center;
     display: table-cell;
     vertical-align: middle;
-    background-color: white;
+    background-color: #dcdcdc;
 }
 
 img{
@@ -32,7 +35,7 @@ img{
     position: absolute;
     top: 180px;
     margin-left: 50%;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     left: -430px;
 }
