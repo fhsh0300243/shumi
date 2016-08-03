@@ -8,6 +8,7 @@
     background-image: url(Picture7.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    z-index:3;
 }
 
 #page_title{ 
@@ -17,7 +18,18 @@
     font-size: 23px;
     margin-left: 50%;
     left: -280px;
-    top: 20px;
+    top: 70px;
+}
+
+#menu_bar{
+    height:20px;
+    width:390px;
+    position: absolute;
+    background-color: black;
+    margin-left: 50%;
+    left: -420px;
+    top:140px;
+    z-index:1;
 }
 
 #search{
@@ -26,9 +38,10 @@
     left: -90px;
     height: 15px;
     width: 41px;
-    top: 89px;
+    top: 134px;
     background-image: url(search.png);
     background-size: cover;
+    z-index:3;
 }
 
 #home{
@@ -37,9 +50,10 @@
     left: -145px;
     height: 17px;
     width: 37.5px;
-    top: 88px;
+    top: 133px;
     background-image: url(home.png);
     background-size: cover;
+    z-index:3;
 }
 
 #dish{
@@ -48,9 +62,10 @@
     left: -195px;
     height: 15px;
     width: 30px;
-    top: 89px;
+    top: 134px;
     background-image: url(dish.png);
     background-size: cover;
+    z-index:3;
 }
 
 #life{
@@ -59,9 +74,10 @@
     left: -245px;
     height: 15px;
     width: 30px;
-    top: 89px;
+    top: 134px;
     background-image: url(life.png);
     background-size: cover;
+    z-index:3;
 }
 
 #modify{
@@ -79,4 +95,5 @@ body{
     background-color: black;
     background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/t31.0-8/13582136_1333711766643534_2743738490796536147_o.jpg);
     background-attachment: fixed;
+    background-size: cover;
 }
