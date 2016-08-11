@@ -2,7 +2,7 @@
     position: absolute;
     top: 70px;
     margin-left: 50%;
-    left: -110px;
+    left: -117.5px;
 }
 
 
@@ -15,7 +15,7 @@ img{
 
 #title{
     height:70px;
-    width:420px;
+    width:405px;
     color: black;
     background-color: white;
     position: absolute;
@@ -23,25 +23,25 @@ img{
     margin-left: 50%;
     font-size: 30px;
     text-align: center;
-    left: -530px;
+    left: -522.5px;
 }
 
 #content{
     position: absolute;
     height:280px;
-    width:420px;
+    width:405px;
     color: white;
     background-color: black;
     top:270px;
     word-break: break-all;
     overflow:auto; 
     margin-left: 50%;
-    left: -530px;
+    left: -522.5px;
 }
 
 #date{
     height:20px;
-    width:420px;
+    width:405px;
     color: white;
     background-color: black;
     position: absolute;
@@ -49,7 +49,7 @@ img{
     margin-left: 50%;
     font-size: 10px;
     text-align: right;
-    left: -530px;
+    left: -522.5px;
 }
 
 #modify{
@@ -76,11 +76,11 @@ img{
 #comment_container{
     position: absolute;
     top: 550px;
-    width: 1060px;
+    width: 1045px;
     height: auto;
     background-color: white;   
     margin-left: 50%;
-    left: -530px;
+    left: -522.5px;
 }
 
 #comment{
