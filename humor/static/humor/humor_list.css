@@ -1,0 +1,64 @@
+#container{
+    position: absolute;
+    top: 120px;
+    margin-left: 50%;
+    left: -430px;
+    height:auto;
+    width:870px;
+}
+#post_hoder{
+    display: inline-block;
+    position: relative;
+    height: 170px;
+    width: 150px;
+}
+
+p{
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    
+}
+
+#date{
+    height: 20px;
+    width: 150px;
+    color: black;
+    font-weight: bold;
+    font-size: 10px;
+    text-align: right;
+    background-color: white;
+}
+
+#title{
+    height: 35px;
+    width: 150px;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    word-break: break-all;
+    text-align: center;
+}
+
+#photo{
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    background-color: white; 
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#empty{
+    display: inline-block;
+    height: 170px;
+    width: 15px;
+}
+
+img{
+    max-width: 140px;
+    max-height: 140px;
+    width: auto;
+    height: auto;
+    
+}

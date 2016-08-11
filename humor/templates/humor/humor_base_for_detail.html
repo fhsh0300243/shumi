@@ -3,17 +3,17 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="{% static 'dish/dish_base.css' %}">
+        <link rel="stylesheet" href="{% static 'humor/humor_base_for_detail.css' %}">
         {% block extra_head %}
         {% endblock %}
-        
-        <title>工程師的SOP食譜</title>
+        <title>工程師的幽默</title>
     </head>
     <body>
-        <div id="area1"></div>
-        <div id="area2">
-            工程師的SOP食譜
+        <div id="head"></div>
+        <div id="page_title">
+            工程師的幽默
         </div>
+        <div id="menu_bar"></div>
         <a href="/search">
             <div id="search"></div>
         </a>
@@ -30,7 +30,7 @@
             <div id="humor"></div>
         </a>
         {% if user.is_authenticated %}
-            <a href="{% url 'dish_new' %}"
+            <a href="{% url 'life_new' %}"
                 <div id="modify"></div>
             </a>
         {% endif %}

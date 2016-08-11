@@ -23,7 +23,7 @@
 
 #menu_bar{
     height:20px;
-    width:390px;
+    width:400px;
     position: absolute;
     background-color: black;
     margin-left: 50%;
@@ -35,7 +35,7 @@
 #search{
     position: absolute;
     margin-left:50%;
-    left: -90px;
+    left: -70px;
     height: 15px;
     width: 41px;
     top: 134px;
@@ -49,7 +49,7 @@
 #home{
     position: absolute;
     margin-left:50%;
-    left: -145px;
+    left: -125px;
     height: 17px;
     width: 37.5px;
     top: 133px;
@@ -63,7 +63,7 @@
 #dish{
     position: absolute;
     margin-left:50%;
-    left: -195px;
+    left: -175px;
     height: 15px;
     width: 30px;
     top: 134px;
@@ -77,11 +77,25 @@
 #life{
     position: absolute;
     margin-left:50%;
-    left: -245px;
+    left: -225px;
     height: 15px;
     width: 30px;
     top: 134px;
     background-image: url(life.png);
+    background-size: cover;
+    z-index:3;
+    background-color:black;
+    border-radius:3px;
+}
+
+#humor{
+    position: absolute;
+    margin-left:50%;
+    left: -285px;
+    height: 14px;
+    width: 40px;
+    top: 134px;
+    background-image: url(humor.png);
     background-size: cover;
     z-index:3;
     background-color:black;

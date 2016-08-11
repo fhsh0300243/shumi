@@ -1,0 +1,18 @@
+{% extends 'humor/humor_base.html' %}
+{% load staticfiles %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'humor/humor_edit.css' %}">
+{% endblock %}
+
+{% block content %}
+
+    <h1>New/Modify post</h1>
+    <form method="POST">{% csrf_token %}
+        <div id="edit-area">
+            {{ humor_post_form.as_p }}
+        </div>
+        <button type="submit">Save</button>
+    </form>
+
+{% endblock %}

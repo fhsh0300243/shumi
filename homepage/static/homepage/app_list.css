@@ -36,12 +36,25 @@
     border-radius:5px;
 }
 
+#humor{
+    position: absolute;
+    height: 35px;
+    width: 100px;
+    top: 282px;
+    left: 72px;
+    margin-left: 50%;
+    background-image: url(humor.png);
+    background-size: cover;
+    background-color:#2f4f4f;
+    border-radius:5px;
+}
+
 #search{
     position: absolute;
     height: 35px;
     width: 95px;
     top: 378px;
-    left: -180px;
+    left: -185px;
     margin-left: 50%;
     background-image: url(search.png);
     background-size: cover;

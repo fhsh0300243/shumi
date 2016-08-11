@@ -1,0 +1,30 @@
+{% extends 'humor/humor_base.html' %}
+{% load staticfiles %}
+{% load embed_video_tags %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'humor/humor_list.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div id="container">
+        {% for humor_post in humor_post_list %}
+            <div id="post_hoder">
+                <div id="title">
+                    <a href="{% url 'humor_detail' pk=humor_post.pk %}" style="text-decoration:none;"><p>{{ humor_post.Humor_title }}</p></a>
+                </div>
+                {% video humor_post.Humor_video as post_video %}
+                    <div id="photo">
+                        <a href="{% url 'humor_detail' pk=humor_post.pk %}">
+                            <img src="{{ post_video.thumbnail }}" alt="">
+                        </a>
+                    </div>
+                {% endvideo %}
+                <div id="date">
+                    <strong>{{ humor_post.Humor_post_created_date|date:"Y / m / d" }}-({{ humor_post.comments.count }})-</strong>
+                </div>
+            </div>
+            <div id="empty"></div>
+        {% endfor %}
+    </div>
+{% endblock %}

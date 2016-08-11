@@ -2,8 +2,9 @@ from django.db import models
 
 # Create your models here.
 from django.utils import timezone
+from hitcount.models import HitCountMixin
 
-class Life_post(models.Model):
+class Life_post(models.Model, HitCountMixin):
     Life_title=models.CharField(max_length=200)
     Life_content=models.TextField(blank=True)
     Life_photo=models.URLField(blank=True)

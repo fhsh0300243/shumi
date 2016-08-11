@@ -1,5 +1,6 @@
 {% extends 'search/base.html' %}
 {% load staticfiles %}
+{% load embed_video_tags %}
 
 {% block extra_head %}
     <link rel="stylesheet" href="{% static 'search/search.css' %}">
@@ -71,6 +72,29 @@
             <div id="empty"></div>
         {% empty %}
             <div id="dish_empty">{{ result_empty_for_dish.0 }}</div>
+        {% endfor %}
+    </div>
+    <div id="search_in_humor">Search in humor</div>
+    <div id="humor_container">       
+        {% for humor_post in result_for_humor %}
+            <div id="post_hoder">
+                <div id="title">
+                    <a href="{% url 'humor_detail' pk=humor_post.pk %}" style="text-decoration:none;"><p>{{ humor_post.Humor_title }}</p></a>
+                </div>
+                {% video humor_post.Humor_video as post_video %}
+                    <div id="photo">
+                        <a href="{% url 'humor_detail' pk=humor_post.pk %}">
+                            <img src="{{ post_video.thumbnail }}" alt="">
+                        </a>
+                    </div>
+                {% endvideo %}
+                <div id="date">
+                    <strong>{{ humor_post.Humor_post_created_date|date:"Y / m / d" }}-({{ humor_post.comments.count }})-</strong>
+                </div>
+            </div>
+            <div id="empty"></div>
+        {% empty %}
+            <div id="humor_empty">{{ result_empty_for_humor.0 }}</div>
         {% endfor %}
     </div>
     <div id="error">{{ errors.0 }}</div>

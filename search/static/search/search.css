@@ -11,21 +11,30 @@ form{
     left: -135px;
 }
 
-#search_in_life{
-    background-color: white;
-    position: absolute;
-    margin-left: 50%;
-    top:150px;
-    left: 167px;
-    border-radius:5px;
-}
-
 #search_in_dish{
     background-color: white;
     position: absolute;
     margin-left: 50%;
-    top:150px;
-    left: -275px;
+    top:165px;
+    left: -420px;
+    border-radius:5px;
+}
+
+#search_in_humor{
+    background-color: white;
+    position: absolute;
+    margin-left: 50%;
+    top:165px;
+    left: -67px;
+    border-radius:5px;
+}
+
+#search_in_life{
+    background-color: white;
+    position: absolute;
+    margin-left: 50%;
+    top:165px;
+    left: 311px;
     border-radius:5px;
 }
 
@@ -33,8 +42,8 @@ form{
     background-color: white;
     position: absolute;
     margin-left: 50%;
-    top:150px;
-    left:-60px;
+    top:121px;
+    left:145px;
     border-radius:5px;
 }
 
@@ -52,22 +61,40 @@ form{
     margin-left: 36.3%;
 }
 
-#life_container{
-    position: absolute;
-    top: 170px;
-    margin-left: 50%;
-    min-height:10px;
-    width:430px;
-    text-align: center;
+#humor_empty{
+    background-color:white;
+    border-radius:5px;
+    width: 100px;
+    margin-left: 36.3%;
 }
 
 #dish_container{
     position: absolute;
-    top: 170px;
+    top: 185px;
     margin-left: 50%;
-    left: -430px;
+    left: -550px;
     min-height: 10px;
-    width:430px;
+    width:360px;
+    text-align: center;
+}
+
+#humor_container{
+    position: absolute;
+    top: 185px;
+    margin-left: 50%;
+    left: -187px;
+    min-height: 10px;
+    width:360px;
+    text-align: center;
+}
+
+#life_container{
+    position: absolute;
+    top: 185px;
+    margin-left: 50%;
+    left: 177px;
+    min-height:10px;
+    width:360px;
     text-align: center;
 }
 
@@ -116,7 +143,7 @@ p{
 #empty{
     display: inline-block;
     height: 170px;
-    width: 15px;
+
 }
 
 img{
