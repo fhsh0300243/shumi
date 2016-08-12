@@ -1,6 +1,6 @@
 #head{
     position: absolute;
-    top: 397px;
+    top: 415px;
     margin-left: 50%;
     left: -450px;
     height: 160px;
@@ -18,7 +18,7 @@
     font-size: 23px;
     margin-left: 50%;
     left: -300px;
-    top: 467px;
+    top: 485px;
 }
 
 #menu_bar{
@@ -28,7 +28,7 @@
     background-color: black;
     margin-left: 50%;
     left: -450px;
-    top:527px;
+    top:545px;
     z-index:1;
 }
 
@@ -38,7 +38,7 @@
     left: -90px;
     height: 15px;
     width: 41px;
-    top: 533px;
+    top: 551px;
     background-image: url(search.png);
     background-size: cover;
     z-index:3;
@@ -52,7 +52,7 @@
     left: -145px;
     height: 17px;
     width: 37.5px;
-    top: 532px;
+    top: 550px;
     background-image: url(home.png);
     background-size: cover;
     z-index:3;
@@ -66,7 +66,7 @@
     left: -195px;
     height: 15px;
     width: 30px;
-    top: 533px;
+    top: 551px;
     background-image: url(dish.png);
     background-size: cover;
     z-index:3;
@@ -80,7 +80,7 @@
     left: -245px;
     height: 15px;
     width: 30px;
-    top: 533px;
+    top: 551px;
     background-image: url(life.png);
     background-size: cover;
     z-index:3;
@@ -94,7 +94,7 @@
     left: -305px;
     height: 14px;
     width: 40px;
-    top: 533px;
+    top: 551px;
     background-image: url(humor.png);
     background-size: cover;
     z-index:3;
