@@ -22,13 +22,13 @@
 }
 
 #menu_bar{
-    height:20px;
+    height:30px;
     width:450px;
     position: absolute;
     background-color: black;
     margin-left: 50%;
     left: -450px;
-    top:537px;
+    top:527px;
     z-index:1;
 }
 
@@ -38,7 +38,7 @@
     left: -90px;
     height: 15px;
     width: 41px;
-    top: 531px;
+    top: 533px;
     background-image: url(search.png);
     background-size: cover;
     z-index:3;
@@ -52,7 +52,7 @@
     left: -145px;
     height: 17px;
     width: 37.5px;
-    top: 530px;
+    top: 532px;
     background-image: url(home.png);
     background-size: cover;
     z-index:3;
@@ -66,7 +66,7 @@
     left: -195px;
     height: 15px;
     width: 30px;
-    top: 531px;
+    top: 533px;
     background-image: url(dish.png);
     background-size: cover;
     z-index:3;
@@ -80,7 +80,7 @@
     left: -245px;
     height: 15px;
     width: 30px;
-    top: 531px;
+    top: 533px;
     background-image: url(life.png);
     background-size: cover;
     z-index:3;
@@ -94,7 +94,7 @@
     left: -305px;
     height: 14px;
     width: 40px;
-    top: 531px;
+    top: 533px;
     background-image: url(humor.png);
     background-size: cover;
     z-index:3;
