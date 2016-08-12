@@ -1,6 +1,6 @@
 #video_container{
     position: absolute;
-    top: 187px;
+    top: 0px;
     margin-left: 50%;
     left: -450px;
 }
@@ -14,12 +14,12 @@ img{
 }
 
 #title{
-    height:50px;
+    height:30px;
     width:450px;
     color: black;
     background-color: white;
     position: absolute;
-    top: 0px;
+    top: 407px;
     margin-left: 50%;
     font-size: 23px;
     text-align: center;
@@ -28,11 +28,11 @@ img{
 
 #content{
     position: absolute;
-    height:125px;
+    height:120px;
     width:450px;
     color: white;
     background-color: black;
-    top:50px;
+    top:437px;
     word-break: break-all;
     overflow:auto; 
     margin-left: 50%;
@@ -41,21 +41,21 @@ img{
 
 #date{
     height:12px;
-    width:900px;
+    width:450px;
     color: black;
     background-color: white;
     position: absolute;
-    top:175px;
+    top:407px;
     margin-left: 50%;
     font-size: 10px;
-    text-align: left;
+    text-align: center;
     left: -450px;
 }
 
 #modify{
     position: absolute;
     margin-left: 50%;
-    top: 0px;
+    top: 420px;
     height: 50px;
     width: 50px;
     left: -100px;

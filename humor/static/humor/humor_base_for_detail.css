@@ -1,8 +1,8 @@
 #head{
     position: absolute;
-    top: 0px;
+    top: 397px;
     margin-left: 50%;
-    left: -430px;
+    left: -450px;
     height: 160px;
     width: 150px;
     background-image: url(Picture7.png);
@@ -17,28 +17,28 @@
     font-weight: bold;
     font-size: 23px;
     margin-left: 50%;
-    left: -280px;
-    top: 70px;
+    left: -300px;
+    top: 467px;
 }
 
 #menu_bar{
     height:20px;
-    width:400px;
+    width:450px;
     position: absolute;
     background-color: black;
     margin-left: 50%;
-    left: -420px;
-    top:140px;
+    left: -450px;
+    top:537px;
     z-index:1;
 }
 
 #search{
     position: absolute;
     margin-left:50%;
-    left: -70px;
+    left: -90px;
     height: 15px;
     width: 41px;
-    top: 134px;
+    top: 531px;
     background-image: url(search.png);
     background-size: cover;
     z-index:3;
@@ -49,10 +49,10 @@
 #home{
     position: absolute;
     margin-left:50%;
-    left: -125px;
+    left: -145px;
     height: 17px;
     width: 37.5px;
-    top: 133px;
+    top: 530px;
     background-image: url(home.png);
     background-size: cover;
     z-index:3;
@@ -63,10 +63,10 @@
 #dish{
     position: absolute;
     margin-left:50%;
-    left: -175px;
+    left: -195px;
     height: 15px;
     width: 30px;
-    top: 134px;
+    top: 531px;
     background-image: url(dish.png);
     background-size: cover;
     z-index:3;
@@ -77,10 +77,10 @@
 #life{
     position: absolute;
     margin-left:50%;
-    left: -225px;
+    left: -245px;
     height: 15px;
     width: 30px;
-    top: 134px;
+    top: 531px;
     background-image: url(life.png);
     background-size: cover;
     z-index:3;
@@ -91,26 +91,15 @@
 #humor{
     position: absolute;
     margin-left:50%;
-    left: -285px;
+    left: -305px;
     height: 14px;
     width: 40px;
-    top: 134px;
+    top: 531px;
     background-image: url(humor.png);
     background-size: cover;
     z-index:3;
     background-color:black;
     border-radius:3px;
-}
-
-#modify{
-    position: absolute;
-    margin-left:50%;
-    left: -345px;
-    height: 50px;
-    width: 50px;
-    top: 54px;
-    background-image: url(modify.png);
-    background-size: cover;
 }
 
 body{
