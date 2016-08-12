@@ -1,8 +1,8 @@
 #video_container{
     position: absolute;
-    top: 70px;
+    top: 187px;
     margin-left: 50%;
-    left: -117.5px;
+    left: -450px;
 }
 
 
@@ -14,42 +14,42 @@ img{
 }
 
 #title{
-    height:70px;
-    width:405px;
+    height:50px;
+    width:450px;
     color: black;
     background-color: white;
     position: absolute;
-    top: 180px;
+    top: 0px;
     margin-left: 50%;
-    font-size: 30px;
+    font-size: 23px;
     text-align: center;
-    left: -522.5px;
+    left:0px;
 }
 
 #content{
     position: absolute;
-    height:280px;
-    width:405px;
+    height:125px;
+    width:450px;
     color: white;
     background-color: black;
-    top:270px;
+    top:50px;
     word-break: break-all;
     overflow:auto; 
     margin-left: 50%;
-    left: -522.5px;
+    left: 0px;
 }
 
 #date{
-    height:20px;
-    width:405px;
-    color: white;
-    background-color: black;
+    height:12px;
+    width:900px;
+    color: black;
+    background-color: white;
     position: absolute;
-    top:250px;
+    top:175px;
     margin-left: 50%;
     font-size: 10px;
-    text-align: right;
-    left: -522.5px;
+    text-align: left;
+    left: -450px;
 }
 
 #modify{
@@ -58,6 +58,7 @@ img{
     top: 0px;
     height: 50px;
     width: 50px;
+    left: -100px;
     background-image: url(modify.png);
     background-size: cover;
 }
@@ -75,12 +76,12 @@ img{
 
 #comment_container{
     position: absolute;
-    top: 550px;
-    width: 1045px;
+    top: 575px;
+    width: 900px;
     height: auto;
     background-color: white;   
     margin-left: 50%;
-    left: -522.5px;
+    left: -450px;
 }
 
 #comment{
