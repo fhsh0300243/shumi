@@ -3,15 +3,15 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="{% static 'life/life_base.css' %}">
+        <link rel="stylesheet" href="{% static 'humor/humor_base.css' %}">
         {% block extra_head %}
         {% endblock %}
-        <title>工程師的日常</title>
+        <title>工程師的歌單</title>
     </head>
     <body>
         <div id="area1"></div>
         <div id="area2">
-            工程師的日常
+            工程師的歌單
         </div>
         <a href="/search">
             <div id="search"></div>
@@ -31,11 +31,6 @@
         <a href="/song">
             <div id="song"></div>
         </a>
-        {% if user.is_authenticated %}
-            <a href="{% url 'life_new' %}"
-                <div id="modify"></div>
-            </a>
-        {% endif %}
         
         {% block content %}
         {% endblock %}

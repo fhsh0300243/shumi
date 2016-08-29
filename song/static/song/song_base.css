@@ -86,17 +86,6 @@
     background-size: cover;
 }
 
-#modify{
-    position: absolute;
-    margin-left:50%;
-    left: -405px;
-    height: 50px;
-    width: 50px;
-    top: 54px;
-    background-image: url(modify.png);
-    background-size: cover;
-}
-
 body{
     background-color: black;
     background-image: url(https://scontent-tpe1-1.xx.fbcdn.net/t31.0-8/13582136_1333711766643534_2743738490796536147_o.jpg);

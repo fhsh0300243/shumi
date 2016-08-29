@@ -75,14 +75,14 @@
     background-size: cover;
 }
 
-#modify{
+#song{
     position: absolute;
     margin-left:50%;
-    left: -355px;
-    height: 50px;
-    width: 50px;
-    top: 54px;
-    background-image: url(modify.png);
+    left: -353px;
+    height: 15px;
+    width: 32px;
+    top: 89.5px;
+    background-image: url(song.png);
     background-size: cover;
 }
 

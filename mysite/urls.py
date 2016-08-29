@@ -22,5 +22,6 @@ urlpatterns = [
     url(r'^dish/', include('dish.dish_urls')),
     url(r'^life/', include('life.life_urls')),
     url(r'^humor/', include('humor.humor_urls')),
+    url(r'^song/', include('song.song_urls')),
     url(r'^search/', include('search.urls')),
 ]

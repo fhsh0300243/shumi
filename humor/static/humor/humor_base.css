@@ -75,10 +75,21 @@
     background-size: cover;
 }
 
+#song{
+    position: absolute;
+    margin-left:50%;
+    left: -353px;
+    height: 15px;
+    width: 32px;
+    top: 89.5px;
+    background-image: url(song.png);
+    background-size: cover;
+}
+
 #modify{
     position: absolute;
     margin-left:50%;
-    left: -355px;
+    left: -405px;
     height: 50px;
     width: 50px;
     top: 54px;

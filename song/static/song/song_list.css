@@ -1,0 +1,6 @@
+#video_container{
+    position: absolute;
+    margin-left: 50%;
+    left: -450px;
+    margin-top: 110px;
+}

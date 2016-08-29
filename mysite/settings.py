@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'dish',
     'life',
     'humor',
+    'song',
     'hitcount',
     'embed_video',
 ]
